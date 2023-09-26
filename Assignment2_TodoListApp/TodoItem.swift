@@ -8,15 +8,25 @@
 import Foundation
 
 
-class TodoItem /*  TODO (protocol) */ {
+class TodoItem: ObservableObject  {
     
     /*
      TODO (variables [min. of 2] + variable initializer)
      */
+    //let id: Int
+    @Published var completed: Bool
+    var description: String
     
-    
+    init(description: String) {
+        self.completed = false
+        self.description = description
+    }
     /*
      TODO (functions [min. of 1])
      */
+    func toggleCompleted() {
+        self.completed = true
+    }
+    
     
 }
