@@ -13,7 +13,7 @@ class TodoItems: ObservableObject {
      TODO (variables [min. 1] + initializer)
      Hint: The purpose of this class is to store a collection of TodoItem objects representing the added items. Do you know why? (has to do with each todo item's state)
      */
-    var todoList: [TodoItem]
+    @Published var todoList: [TodoItem]
     
     init () {
         todoList = []

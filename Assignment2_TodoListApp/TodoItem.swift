@@ -15,17 +15,17 @@ class TodoItem: ObservableObject  {
      */
     //let id: Int
     @Published var completed: Bool
-    var description: String
+    @Published var description: String
     
     init(description: String) {
-        self.completed = false
-        self.description = description
+        self.completed = false;
+        self.description = description;
     }
     /*
      TODO (functions [min. of 1])
      */
     func toggleCompleted() {
-        self.completed = true
+        self.completed = true;
     }
     
     

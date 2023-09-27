@@ -12,8 +12,12 @@ struct TodoItemScreen: View {
     /*
      TODO (variables [min. 1])
      */
+    var todoItem = 0;
     
     var body: some View {
+        HStack(alignment: .center) {
+            Text("Hello")
+        }
         Text("Implement here!")
     }
 }
